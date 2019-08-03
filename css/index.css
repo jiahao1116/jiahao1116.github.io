@@ -1,0 +1,526 @@
+/* 初始化代码开始 */
+
+body, div, span, p, a, img, input, ul, li, h1, h2, h3, h4, strong, em, ins, del, i, main, article {
+    /* m0+p0 */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1;
+    background-color: #fff;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 初始化代码结束 */
+
+/* 主体模块的开始 */
+
+/* 帮助与支持模块的开始 */
+
+main .content {
+    background-color: #ccc;
+    width: auto;
+    height: 419px;
+    background-image: url("../image/bigPic.png");
+    background-size: cover;
+    /* 消除包含塌陷 */
+    overflow: hidden;
+    position: relative;
+}
+
+main .content h1 {
+    /* 距离上面头部盒子的距离,不包括头部盒子的高度 */
+    margin-top: 99px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 64px;
+    color: #FFF;
+}
+
+main .content .text {
+    /* 距离上面h1盒子的距离 */
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFF;
+}
+
+main .content .container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+main .content .container .group {
+    width: 1180px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+main .content .group a {
+    float: left;
+    width: 20%;
+    height: 110px;
+    cursor: pointer;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    transition: background-color 0.4s ease-in-out;
+}
+
+/* 增加交互 */
+main .content .group a:hover {
+    background-color:rgb(53, 90, 119);
+}
+
+main .content .group a:last-child {
+    border-right: none;
+}
+
+main .group a article {
+    padding: 27px 0 0 30px;
+}
+
+main .group a article .icon {
+    float: left;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    margin-top: 5px;
+}
+
+main .group a:nth-child(1) article .icon {
+    background-image: url('../image/icon1.png');
+}
+
+main .group a:nth-child(2) article .icon {
+    background-image: url('../image/icon2.png');
+}
+
+main .group a:nth-child(3) article .icon {
+    background-image: url('../image/icon3.png');
+}
+
+main .group a:nth-child(4) article .icon {
+    background-image: url('../image/icon4.png');
+}
+
+main .group a:last-child article .icon {
+    background-image: url('../image/icon5.png');
+}
+
+main .group a article .detail {
+    margin: 0 0 0 51px;
+}
+
+main .group a article .detail h2 {
+    width: 155px;
+    height: 30px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+main .group a article .detail p {
+    width: 154px;
+    height: 24px;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 24px;
+    opacity:.6;
+    margin-top: 0;
+    text-align: left;
+}
+
+/* 帮助与支持模块的结束 */
+
+/* cloud云模块的开始 */
+
+main .cloud-container {
+    padding-bottom:80px;
+    background-color: #fff;
+}
+
+main .cloud-container .cloud-box {
+    width: auto;
+}
+
+main .cloud-box .top-title h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+    line-height: 52px;
+    opacity: .85;
+    margin-top: 80px;
+}
+
+main .cloud-box .top-title p {
+    font-size: 14px;
+    color: #000;
+    opacity: .4;
+    text-align: center;
+    line-height: 26px;
+    margin: 10px 0 40px 0;
+}
+
+main .cloud-container .cloud-box .group {
+    width: 1180px;
+    height: 299px;
+    margin: 0 auto;
+}
+
+main .cloud-box .group .cloud-article {
+    float: left;
+    width: 380px;
+    margin-right: 20px;
+}
+
+main .cloud-box .group .cloud-article:last-child{
+    margin-right: 0;
+}
+
+main .group .cloud-article .tp-detail {
+    background-color: #ccc;
+    width: 380px;
+    height: 100px;
+    background-size: cover;
+}
+main .group .cloud-article:nth-child(1) .tp-detail
+{
+    background-image: url("../image/bdCloud.png");
+}
+main .group .cloud-article:nth-child(2) .tp-detail
+{
+    background-image: url("../image/quickEnter.png");
+}
+main .group .cloud-article:nth-child(3) .tp-detail
+{
+    background-image: url("../image/solution.png");
+}
+main .group .cloud-article .tp-detail h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+main .group .cloud-article .bm-detail {
+    /* border-top: 0; */
+    border: 1px solid #EBEBEB;
+}
+
+main .cloud-article .bm-detail ul li {
+    height: 66px;
+    font-weight: normal;
+    
+}
+
+main .cloud-article .bm-detail li a {
+    display: block;
+    width: 338px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 14px;
+    font-weight: normal;
+    color:rgba(0, 0, 0, 0.6);
+    margin: 0 20px;
+    border-bottom: 1px solid #EBEBEB;
+    transition: color 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+/* 增加交互 */
+.cloud-article .bm-detail li a:hover {
+    color: rgb(31, 134, 219);
+}
+
+
+main .cloud-article .bm-detail li a::after {
+    content: '>';
+    font-size: 24px;
+    color:  #CCC;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+main .cloud-article .bm-detail li:last-child a {
+    border-bottom: 0;
+}
+
+/* cloud云模块的结束 */
+
+/* product产品文档模块开始 */
+
+main .product .pro-content {
+    width: auto;
+    height: 856px;
+    background-color: #EBEBEB;
+    overflow: hidden;
+}
+
+.product .pro-content .top-title {
+    width: auto;
+    height: 88px;
+    margin-top: 80px;
+}
+
+.pro-content .top-title h2 {
+    font-size: 30px;
+    font-weight: normal;
+    opacity: .85;
+    text-align: center;
+    line-height: 52px;
+}
+
+.pro-content .top-title p {
+    font-size: 14px;
+    opacity: .4;
+    text-align: center;
+    line-height: 26px;
+    margin: 10px 0 40px 0;
+}
+
+.product .pro-content .group {
+    width: auto;
+    height: 570px;
+    /* margin: 0 auto; */
+    margin: 0 121px;
+}
+
+.pro-content .group .detail-content {
+    width: 100%;
+    margin: 20px 0 0 20px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+}
+
+.pro-content .group .detail-content .pro-article {
+    float: left;
+    width: 578px;
+    height: 168px;
+    background-color: #FFF;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+
+.group .detail-content .pro-article .img  {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 30px 0 0 30px;
+    background-size: 100%;
+}
+
+.group .detail-content .pro-article:nth-child(1) .img {
+    background-image: url("../image/BBC.png");
+}
+
+.group .detail-content .pro-article:nth-child(2) .img {
+    background-image: url("../image/BOS.png");
+}
+
+.group .detail-content .pro-article:nth-child(3) .img {
+    background-image: url("../image/LSS.png");
+}
+
+.group .detail-content .pro-article:nth-child(4) .img {
+    background-image: url("../image/loTHub.png");
+}
+
+.group .detail-content .pro-article:nth-child(5) .img {
+    background-image: url("../image/BCD.png");
+}
+
+.group .detail-content .pro-article:nth-child(6) .img {
+    background-image: url("../image/BML.png");
+}
+
+
+
+
+.group .detail-content .pro-article .detail {
+    width: 428px;
+    float: left;
+    padding: 30px;
+    /* overflow: hidden; */
+}
+
+.pro-article .detail h3 {
+    font-size: 18px;
+    font-weight: normal;
+    opacity: .85;
+    line-height: 36px;
+}
+
+.pro-article .detail p {
+    font-size: 14px;
+    opacity: .4;
+    line-height: 26px;
+}
+
+.pro-article .detail .links {
+    width: 428px;
+    height: 26px;
+    margin-top: 20px;
+}
+
+.pro-article .detail .links ul li {
+    float: left;
+    padding: 0 15px;
+    position: relative;
+}
+
+.detail .links ul li:first-child {
+    padding-left:0;
+}
+
+.detail .links ul li a {
+    font-size: 14px;
+    font-weight: normal;
+    opacity: .6;
+    line-height: 26px;
+    /* 过渡属性: 过渡属性名 过渡时间 运动曲线 延迟时间 */
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.detail .links ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.detail .links ul li a::after {
+    content: '|';
+    font-size: 12px;
+    color:  #CCC;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.detail .links ul li:last-child a::after {
+    content: '';
+}
+
+.product .pro-content .other {
+    width: 100%;
+    height: 38px;
+    font-weight: normal;
+}
+
+.pro-content .other a {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 38px;
+    opacity: .4;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 38px;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.pro-content .other a:hover {
+    border-color: #000;
+}
+
+/* product产品文档模块结束 */
+
+/* register模块的开始 */
+
+main .register {
+    background-color: #F5F5F5;
+    margin-top: 80px;
+}
+
+.register .re-container {
+    width: auto;
+    height: 240px;
+    background-image: url("../image/registerBg.png");
+}
+
+.register .re-container .group {
+    /* margin-top: 100px; */
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.register .re-container .group h2 {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: normal;
+    opacity: .85;
+    text-align: center;
+    line-height: 52px;
+}
+
+.register .re-container .group a {
+    display: block;
+    width: 160px;
+    height: 38px;
+    background-color: #108CEE;
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFF;
+    text-align: center;
+    line-height: 38px;
+    margin: 30px auto 0 auto;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.register .re-container .group a:hover {
+    background-color: #1CEE;
+}
+
+/* register模块的结束 */
+
+/* 主体模块的结束 */

@@ -1,0 +1,51 @@
+页面采用的布局(盒子模型的应用)
+
+主体模块的结构:<main></main>
+上面部分:帮助与支持模块
+盒子模型:<main>中包含类名为content的div大盒子,大盒子里的背景图片为imageJH文件夹中的bigPic{注意页面真实背景图片高度为480px,但任务分工后便于操作,减去了head部分的61px,h1标签距离上面的头部是99px;采取的背景图片高度为419px};
+(1)content内层嵌套h1盒子;
+(2)content内层嵌套类名为text的p盒子;
+(3)content内层嵌套类名为container的div盒子;
+                 container内层嵌套div.group;
+                                 .group嵌套5个a标签;
+                                            a标签嵌套article标签;
+                                                             article标签嵌套2个标签(div.icon+ div.detail);
+                                                                    detail中嵌套2个标签(h2 + p ).
+
+
+
+
+中上部分:cloud模块
+最外面的大盒子div类名:cloud-container-----嵌套div.cloud-box
+-----(1)嵌套div.top-title(装上下两个盒子:上面是h2的盒子+下面是p的盒子)
+-----(2)嵌套div.group的大盒子-----嵌套左中右三个div盒子(类名为cloud-article)
+                                                         ----------cloud-article中嵌套上下div两个盒子(上面为div.tp-detail + 下面为div.bm-detail)
+                                                                                                                                                                      ---------.bm-detail再嵌套ul------ul再嵌套三个li----每个li中嵌套一个a标签---a标签里面有文字(如:轻松使用百度云)和闪烁右箭头
+
+
+中下部分:product产品文档模块
+最外面的大盒子div类名:product-----嵌套div.pro-content
+-----(1)嵌套div.top-title(装上下两个盒子:上面是h2的盒子+下面是p的盒子)
+-----(2)嵌套div.group的大盒子-----div.group中嵌套datail-content的div盒子-------datail-content嵌套6个div盒子(类名为pro-article)
+                                                         ----------每个pro-article再嵌套左边的div.img盒子 + 右边的div.detail盒子
+                         ----------------右边的div.detail盒子包括上中下三个盒子(上:h3 + 中:p + 下:div.links)
+                                      ------------div.links中嵌套ul----------再嵌套四个li--------每个li中嵌套1个a标签
+-----(3)嵌套div.other的盒子-------里面嵌套一个a标签
+
+
+下面部分:register模块
+最外面的大盒子div类名:register-------嵌套div.re-container-------再嵌套div.group
+                            -----------div.group包含两个盒子(上面为h2 + 下面为a)
+
+
+项目心得:
+本次项目,分配给自己的页面大多是CSS静态页面,在完成的过程中,深深明白了3点,是当前阶段的"致命伤":
+(1)对布局的不熟悉,导致自己的布局速度很慢;
+(2)知识点的不熟和无法形成知识体系,导致自己对形成某个功能总是磕磕碰碰,所以,进程很慢(这其中包括了对各种盒子模型在确立位置时,应用浮动和定位时不熟;以及某些关键知识点的疏漏,比如做一个箭头应用伪元素时遗忘知识点;还有对transition功能的遗忘等);
+(3)此次布局由于大多可以直接用css来完成.所以基本没能使用到js,而js的知识点自己也明白还很薄弱,所以今后的道路要想越走越远越好,不得不深思自己的学习态度以及学习方法!
+
+
+
+                                                                                                                                                                      
+
+
